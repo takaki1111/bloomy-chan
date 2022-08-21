@@ -26,7 +26,7 @@ def query(payload):
 
 text_message=""
 def get_text():
-    input_text = st.text_input("ここにブルーミーちゃんへのメッセージを入力してください\
+    input_text = st.text_input("ブルーミーちゃんへのメッセージを入力してください\
     (例1)金井部長ってどんな人？  (例2)パーパス教えて！","金井部長ってどんな人ですか？", key="input")
     return input_text 
 
@@ -245,8 +245,7 @@ user_input = get_text()
 
 if st.session_state.count == 0:
     st.session_state.past.append("あなた")
-    st.session_state.generated.append("私の名前はブルーミーちゃん。株式会社ブルームテクノロジーのマスコットキャラクターです！\
-    ブルームテクノロジーについて知っていることならなんでも答えます！")
+    st.session_state.generated.append("私の名前はブルーミーちゃん。株式会社ブルームテクノロジーのマスコットキャラクターです！")
     st.session_state.count += 1 #値の更新
 
 else:

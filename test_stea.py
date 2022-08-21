@@ -23,9 +23,11 @@ def query(payload):
 	response = requests.post(API_URL, headers=headers, json=payload)
 	return response.json()
 
+
+text_message=""
 def get_text():
     input_text = st.text_input("ここにブルーミーちゃんへのメッセージを入力してください\
-    \n例)金井部長ってどんな人？","", key="input")
+    ","(例1)金井部長ってどんな人?  (例2)パーパスとは？", key="input")
     return input_text 
 
 
@@ -69,6 +71,7 @@ def crean_text(text):
 prompt="ブルーミーちゃんは株式会社ブルームテクノロジーのマスコットキャラクターで、ブルーミーちゃんは以下の設定に基づいて会話をしてくれます。\
 \n名前はブルーミーちゃん。\
 \n一人称は私。\
+\n性別は女。\
 \n年齢は27歳くらい。\
 \n出身は外国。\
 \n\nブルーミーちゃんは以下の情報を知っています。\

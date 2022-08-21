@@ -240,7 +240,7 @@ user_input = get_text()
 
 if st.session_state.count == 0:
     st.session_state.past.append("あなた")
-    st.session_state.generated.append("チャットボット")
+    st.session_state.generated.append("私の名前はブルーミーちゃん。株式会社ブルームテクノロジーのマスコットキャラクターです！")
     st.session_state.count += 1 #値の更新
 
 else:

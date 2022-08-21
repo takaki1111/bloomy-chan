@@ -26,7 +26,7 @@ def query(payload):
 
 text_message=""
 def get_text():
-    input_text = st.text_input("ブルーミーちゃんへのメッセージを入力してください","", key="input")
+    input_text = st.text_input("ここにブルーミーちゃんへのメッセージを入力してください！！","", key="input")
     return input_text 
 
 

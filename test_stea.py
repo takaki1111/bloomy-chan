@@ -24,7 +24,8 @@ def query(payload):
 	return response.json()
 
 def get_text():
-    input_text = st.text_input("ここにチャットボットへのメッセージを入力してください","", key="input")
+    input_text = st.text_input("ここにブルーミーちゃんへのメッセージを入力してください\
+    \n例)金井部長ってどんな人？","", key="input")
     return input_text 
 
 
@@ -90,6 +91,7 @@ prompt="ブルーミーちゃんは株式会社ブルームテクノロジーの
 \n身長は高い。\
 \n基本私服。\
 \nエンジニア経験が長い。\
+\nAIのことならなんでも知っている。\
 \n\n石田さん:\
 \n株式会社ブルームテクノロジーのデータサイエンス課の課長。\
 \n金髪、イケメン、細身で、子持ち。\

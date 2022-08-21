@@ -244,7 +244,9 @@ user_input = get_text()
 
 if st.session_state.count == 0:
     st.session_state.past.append("あなた")
-    st.session_state.generated.append("私の名前はブルーミーちゃん。株式会社ブルームテクノロジーのマスコットキャラクターです！")
+    st.session_state.generated.append("私の名前はブルーミーちゃん。ブルームテクノロジーのことならなんでも聞いてね！！")
+　　st.session_state.past.append("データサイエンス課の課長って誰なんだろう？")
+　　st.session_state.generated.append("「データサイエンス課の課長って誰」と聞いてみましょう！")
     st.session_state.count += 1 #値の更新
 
 else:

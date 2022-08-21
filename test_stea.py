@@ -27,7 +27,7 @@ def query(payload):
 text_message=""
 def get_text():
     input_text = st.text_input("ここにブルーミーちゃんへのメッセージを入力してください\
-    ","(例1)金井部長ってどんな人?  (例2)パーパスとは？", key="input")
+    (例1)金井部長ってどんな人?  (例2)パーパスとは？","金井部長ってどんな人?", key="input")
     return input_text 
 
 

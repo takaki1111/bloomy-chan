@@ -3,6 +3,7 @@ from streamlit_chat import message
 import requests
 import datetime
 import openai
+import random
 
 
 st.set_page_config(
@@ -240,16 +241,22 @@ if 'count' not in st.session_state:
 
 user_input = get_text()
 
+x = random.randint(0,2)
+
+name_list=["ブルームテクノロジーの部長","データサイエンス課の課長","ブルームテクノロジーの取締役"]
+
+
+past_sent=name_list[x]+"って誰なんだろう？"
+generated_sent="「"+name_list[x]+"は誰ですか？」と聞いてみましょう！"
 
 if st.session_state.count == 0:
-
-
+	
 	st.session_state.past.append("あなた")
 	st.session_state.generated.append("私の名前はブルーミーちゃん。ブルームテクノロジーのことならなんでも聞いてね！！")
-	st.session_state.past.append("ブルームテクノロジーの部長って誰なんだろう？")
-	st.session_state.generated.append("「ブルームテクノロジーの部長って誰ですか？」と聞いてみましょう！")
+	st.session_state.past.append(past_sent)
+	st.session_state.generated.append(generated_sent)
 	st.session_state.count += 1 #値の更新
-
+	
 else:
 
 

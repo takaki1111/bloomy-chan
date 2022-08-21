@@ -284,7 +284,7 @@ else:
                 #print("prompt_new",prompt_new)
                 #print(n)
                 #print("あなた"+text)
-                print("高橋"+return_text)
+                #print("高橋"+return_text)
                 output=return_text
                 st.session_state['prompt']=prompt_new
             except:
@@ -294,14 +294,14 @@ else:
 
         else:
             try:    
-                prompt_input_new=st.session_state['prompt']+"\nあなた:"+user_input+"\n高橋:"
+                prompt_input_new=st.session_state['prompt']+"\nあなた:"+user_input+"\nブルーミーちゃん:"
                 return_text=text_summary(prompt_input_new)
                 #print("return_text",return_text)
                 st.session_state['prompt']=prompt_input_new+return_text
                 #print("prompt_new",prompt_new)
                 
                 #print("あなた"+text)
-                print("高橋"+return_text)
+                #print("高橋"+return_text)
                 output=return_text
             except:
                 return_text=talk_api(user_input)

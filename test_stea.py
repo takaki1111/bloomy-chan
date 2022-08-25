@@ -53,7 +53,7 @@ def text_summary(prompt):
     engine="text-davinci-002",
     prompt=prompt,
     temperature=0.8,
-    max_tokens=100,
+    max_tokens=160,
     top_p=1.0,
     frequency_penalty=0.0,
     presence_penalty=0.0,
